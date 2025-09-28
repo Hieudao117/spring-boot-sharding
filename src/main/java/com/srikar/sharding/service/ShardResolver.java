@@ -1,4 +1,4 @@
-package com.srikar.sharder.service;
+package com.srikar.sharding.service;
 
 /**
  * Interface to resolve which shard to use for a given key.

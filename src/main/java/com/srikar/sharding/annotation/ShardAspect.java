@@ -1,10 +1,9 @@
-package com.srikar.sharder.annotation;
+package com.srikar.sharding.annotation;
 
-import com.srikar.sharder.datasource.ShardContextHolder;
-import com.srikar.sharder.service.ShardResolver;
+import com.srikar.sharding.datasource.ShardContext;
+import com.srikar.sharding.service.ShardResolver;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -28,7 +27,7 @@ public class ShardAspect {
 
     private final ShardResolver shardResolver;
 
-    @Around("@annotation(com.srikar.sharder.annotation.Sharded)")
+    @Around("@annotation(com.srikar.sharding.annotation.Sharded)")
     public Object aroundShardedMethod(ProceedingJoinPoint joinPoint) throws Throwable {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
@@ -39,9 +38,9 @@ public class ShardAspect {
                 : extractShardKey(method, joinPoint.getArgs());
 
         Object result;
-        try (ShardContextHolder contextHolder = new ShardContextHolder()) {
+        try (ShardContext contextHolder = new ShardContext()) {
             contextHolder.set(shardResolver.resolve(shardKey));
-            log.info("Shard key applied: {}", ShardContextHolder.getKey());
+            log.info("Shard key applied: {}", ShardContext.getKey());
             result = joinPoint.proceed();
         }
         return result;

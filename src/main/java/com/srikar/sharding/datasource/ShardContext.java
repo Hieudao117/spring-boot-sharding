@@ -1,13 +1,12 @@
-package com.srikar.sharder.datasource;
+package com.srikar.sharding.datasource;
 
-import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 
 /**
  * Thread-local holder for current shard key.
  */
 @Slf4j
-public class ShardContextHolder implements AutoCloseable {
+public class ShardContext implements AutoCloseable {
 
     private static final ThreadLocal<String> CONTEXT = new ThreadLocal<>();
 

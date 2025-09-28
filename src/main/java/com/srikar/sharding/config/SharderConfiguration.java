@@ -1,6 +1,6 @@
-package com.srikar.sharder.config;
+package com.srikar.sharding.config;
 
-import com.srikar.sharder.datasource.ShardedDataSourceRouter;
+import com.srikar.sharding.datasource.ShardedDataSourceRouter;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +27,7 @@ import java.util.HashMap;
 @SpringBootConfiguration
 @EnableConfigurationProperties(SharderProperties.class)
 @EnableTransactionManagement
-@ComponentScan(basePackages = "com.srikar.sharder")
+@ComponentScan(basePackages = "com.srikar.sharding")
 public class SharderConfiguration {
 
     private final SharderProperties properties;

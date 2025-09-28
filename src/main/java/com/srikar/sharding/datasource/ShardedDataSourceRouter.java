@@ -1,4 +1,4 @@
-package com.srikar.sharder.datasource;
+package com.srikar.sharding.datasource;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
@@ -11,7 +11,7 @@ public class ShardedDataSourceRouter extends AbstractRoutingDataSource {
 
     @Override
     protected Object determineCurrentLookupKey() {
-        String key = ShardContextHolder.getKey();
+        String key = ShardContext.getKey();
         log.debug("Current shard key: {}", key);
         return key;
     }

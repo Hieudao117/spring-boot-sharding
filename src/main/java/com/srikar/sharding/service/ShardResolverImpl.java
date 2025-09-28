@@ -1,6 +1,6 @@
-package com.srikar.sharder.service;
+package com.srikar.sharding.service;
 
-import com.srikar.sharder.config.SharderProperties;
+import com.srikar.sharding.config.SharderProperties;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -17,12 +17,12 @@ import java.util.TreeMap;
 @Slf4j
 @Getter
 @Component
-public class DefaultShardResolver implements ShardResolver {
+public class ShardResolverImpl implements ShardResolver {
 
     private final Map<String, String> keyMapper;
     private final TreeMap<Long, RangeEntry> rangeMapper;
 
-    public DefaultShardResolver(SharderProperties properties) {
+    public ShardResolverImpl(SharderProperties properties) {
         this.keyMapper = properties.keyMapping() != null ? properties.keyMapping() : new HashMap<>();
         this.rangeMapper = parseRangeMap(properties.rangeMapping());
     }

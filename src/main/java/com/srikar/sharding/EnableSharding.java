@@ -1,7 +1,7 @@
-package com.srikar.sharder;
+package com.srikar.sharding;
 
 
-import com.srikar.sharder.config.SharderConfiguration;
+import com.srikar.sharding.config.SharderConfiguration;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;

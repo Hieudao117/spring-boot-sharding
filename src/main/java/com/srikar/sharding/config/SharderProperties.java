@@ -1,4 +1,4 @@
-package com.srikar.sharder.config;
+package com.srikar.sharding.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 
-@ConfigurationProperties(prefix = "sharder")
+@ConfigurationProperties(prefix = "sharding")
 public record SharderProperties(
 
         String defaultKey,
