@@ -7,7 +7,7 @@ import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
  * Routing datasource that selects the current target based on ShardContextHolder.
  */
 @Slf4j
-public class ShardedDataSourceRouter extends AbstractRoutingDataSource {
+public class ShardDataSourceRouter extends AbstractRoutingDataSource {
 
     @Override
     protected Object determineCurrentLookupKey() {

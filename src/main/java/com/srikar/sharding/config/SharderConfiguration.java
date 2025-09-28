@@ -1,6 +1,6 @@
 package com.srikar.sharding.config;
 
-import com.srikar.sharding.datasource.ShardedDataSourceRouter;
+import com.srikar.sharding.datasource.ShardDataSourceRouter;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import lombok.extern.slf4j.Slf4j;
@@ -46,7 +46,7 @@ public class SharderConfiguration {
     @Bean
     @Primary
     public DataSource dataSource() {
-        ShardedDataSourceRouter router = new ShardedDataSourceRouter();
+        ShardDataSourceRouter router = new ShardDataSourceRouter();
         HashMap<Object, Object> map = new HashMap<>();
         properties.datasource().forEach(ds -> {
             final HikariConfig shardedHikariConfig = hikariConfig();
